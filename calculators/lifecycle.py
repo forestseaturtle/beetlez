@@ -1,4 +1,4 @@
-# This calculator is going to show you the average lifecycle expectations of
+# This calculator is going to give you and idea of the average lifecycle expectations of
 # organisms in the colony.
 
 #Import Portion
@@ -22,5 +22,7 @@ family2_addition = family2_1 + family2_2 + family2_3
 family1 = family1_addition / 3
 family2 = family2_addition / 3
 
-print(family1)
-print(family2)
+# Display Portion
+
+print (family1, "Days, on average, until eggs hatch")
+print (family2, "Number, on average, of instars of the pupa")
