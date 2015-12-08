@@ -16,9 +16,15 @@ while i < 100:
         age2 = adult + age1
         age3 = eggday + age2
         age4 = egghatch + age3
-        deadbeetle = age4 + deadbeetleday
+        deadbeetle = age3 + deadbeetleday
         i = i + 1
-        print(age3)
+        print(deadbeetle)
         with open("lifecyclelog.txt", "a") as myfile:
+            myfile.write(str(deadbeetle))
+            myfile.write("\n")
+        with open("lifecyclelogage3.txt", "a") as myfile:
             myfile.write(str(age3))
+            myfile.write("\n")
+        with open("lifecyclelogage4.txt", "a") as myfile:
+            myfile.write(str(age4))
             myfile.write("\n")
