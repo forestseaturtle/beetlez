@@ -1,8 +1,6 @@
 # This calculator is a headless version of lifecycles.py
 
-# Initial worm entry
-
-worm0 = int(input("How many worms you got - "))
+import random
 
 # Age calculation for pupation
 
@@ -28,3 +26,18 @@ age4 = egghatch + age3
 
 deadbeetleday = 30 - egghatch
 deadbeetle = age4 + deadbeetleday
+
+
+print ()
+print ()
+print ("Worm Death Day", deadbeetle)
+print ("Egg Lay Day", age3)
+print ("Egg Hatch Day", age4)
+print ()
+print ()
+
+deadb = str(deadbeetle) + "\n"
+
+with open("lifecyclelog.txt", "a") as myfile:
+    myfile.write(str(age4))
+    myfile.write("\n")
